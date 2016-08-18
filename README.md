@@ -1,7 +1,13 @@
 # EvolineAPI-NodeJS
-Lib JavaScript para integração com a API Evoline
+Lib JavaScript para integração no NodeJS  com a API Evoline
 
-### Exemplo
+### Instalação
+
+```bash
+npm install evoline-api --save
+```
+
+### Utilização
 ```javascript
 var EvolineAPI = require('evoline-api');
 
@@ -14,3 +20,7 @@ evoline.consultaSaldo()
   //error
 });
 ```
+
+### License
+
+MIT
