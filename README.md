@@ -1,5 +1,5 @@
 # EvolineAPI-NodeJS
-Lib JavaScript para integração no NodeJS  com a API Evoline
+Lib JavaScript para integração no NodeJS com a [API](https://api.evoline.com.br/doc/) [Evoline](http://www.evoline.com.br/).
 
 ### Instalação
 
