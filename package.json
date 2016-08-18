@@ -1,8 +1,8 @@
 {
-  "name": "evolineapi",
+  "name": "evoline-api",
   "version": "1.0.0",
   "description": "EvolineAPI for NodeJS",
-  "main": "index.js",
+  "main": "./src/EvolineAPI.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +16,13 @@
     "node",
     "evolineapi"
   ],
-  "author": "tiagops.prog@gmail.com",
+  "author": "Tiago Pereira <tiagops.prog@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tiago-pereira/EvolineAPI-NodeJS/issues"
   },
-  "homepage": "https://github.com/tiago-pereira/EvolineAPI-NodeJS#readme"
+  "homepage": "https://github.com/tiago-pereira/EvolineAPI-NodeJS#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1"
+  }
 }
