@@ -1,0 +1,25 @@
+{
+  "name": "evolineapi",
+  "version": "1.0.0",
+  "description": "EvolineAPI for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiago-pereira/EvolineAPI-NodeJS.git"
+  },
+  "keywords": [
+    "evoline",
+    "nodejs",
+    "node",
+    "evolineapi"
+  ],
+  "author": "tiagops.prog@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiago-pereira/EvolineAPI-NodeJS/issues"
+  },
+  "homepage": "https://github.com/tiago-pereira/EvolineAPI-NodeJS#readme"
+}
