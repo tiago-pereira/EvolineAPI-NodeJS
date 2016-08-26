@@ -1,4 +1,3 @@
-var qs = require('querystring');
 var https = require('https');
 var Promise = require('bluebird');
 
@@ -12,8 +11,8 @@ HttpClient.prototype.request = function(path, method, body){
     var options = JSON.parse(JSON.stringify(this.options));
     options.method = method;
     options.path = path;
-    var data = qs.stringify(body);
-    options.headers['Content-Type'] = 'application/x-www-form-urlencoded';
+    var data = JSON.stringify(body);
+    options.headers['Content-Type'] = 'application/json';
     options.headers['Content-Length'] = Buffer.byteLength(data);
 
     var promise = new Promise(function(resolve, reject){
@@ -26,21 +25,21 @@ HttpClient.prototype.request = function(path, method, body){
 
           res.on('end', function end() {
               if (res.statusCode >= 500) {
-                  reject(new Error('Oops unknown error!'));
+                  return reject(new Error('Oops unknown error!'));
               } else if (res.statusCode >= 400) {
                   var parsed = JSON.parse(response);
-                  reject(new Error(parsed.message), parsed);
+                  return reject(new Error(parsed.message), parsed);
               } else if (res.statusCode == 204){
-                  reject(null, {});
+                  return reject(null, {});
               }
               else {
-                  resolve(JSON.parse(response));
+                  return resolve(JSON.parse(response));
               }
           })
       });
 
       req.on('error', function(e) {
-        reject(e);
+        return reject(e);
       });
 
       if (!isGetDelete) {
