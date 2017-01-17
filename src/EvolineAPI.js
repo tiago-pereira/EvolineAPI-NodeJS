@@ -66,7 +66,7 @@ EvolineAPI.prototype.relatorioChamadas = function(chamadaId){
 EvolineAPI.prototype.enviaSMS = function(numero_destino, mensagem){
   return this.http.request('/sms', 'POST', {
     numero_destino: numero_destino,
-    mensagem: mensagem,
+    mensagem: mensagem
   });
 }
 
