@@ -1,10 +1,10 @@
 var HttpClient = require('./HttpClient.js');
 
-function EvolineAPI(acessToken) {
+function EvolineAPI(accessToken) {
   this.options = {
     host: 'api.evoline.com.br',
     headers: {
-      'Access-Token': acessToken
+      'Access-Token': accessToken
     }
   }
 
