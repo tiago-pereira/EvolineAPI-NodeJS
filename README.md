@@ -1,5 +1,5 @@
-# EvolineAPI-NodeJS
-Lib JavaScript para integração no NodeJS com a [API](https://api.evoline.com.br/doc/) [Evoline](http://www.evoline.com.br/).
+# TotalVoice-NodeJS
+Lib JavaScript para integração no NodeJS com a [API](https://api.evoline.com.br/doc/) [TotalVoice](http://www.evoline.com.br/).
 
 ### Instalação
 
@@ -9,11 +9,11 @@ npm install evoline-api --save
 
 ### Utilização
 ```javascript
-var EvolineAPI = require('evoline-api');
+var TotalVoice = require('evoline-api');
 
-var evoline = new EvolineAPI(accessToken);
+var totalVoice = new TotalVoice(accessToken);
 
-evoline.consultaSaldo()
+totalVoice.consultaSaldo()
 .then(function(response){
   //success
 }, function(err){
